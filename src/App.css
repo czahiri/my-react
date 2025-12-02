@@ -1,0 +1,140 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #e6e6e6;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.titles h1 {
+  font-size: 28px;
+  margin: 0 0 4px 0;
+}
+.subtitle {
+  margin: 0;
+  color: #9aa0a6;
+}
+.subtitle a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+.subtitle a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #3c4043;
+  background: #202124;
+  color: #e6e6e6;
+  min-width: 240px;
+  outline: none;
+}
+.search:focus {
+  border-color: #8ab4f8;
+  box-shadow: 0 0 0 3px rgba(138, 180, 248, 0.15);
+}
+
+.state {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #202124;
+  border: 1px solid #3c4043;
+  color: #e6e6e6;
+}
+.state.error {
+  border-color: #f28b82;
+  color: #ffd3cd;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.kpi {
+  background: radial-gradient(1200px 600px at -20% -10%, #283046 0%, #1b1f2a 60%);
+  border: 1px solid #2f3645;
+  border-radius: 12px;
+  padding: 16px;
+}
+.kpi-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+.kpi-label {
+  color: #9aa0a6;
+}
+
+.panel {
+  background: #141518;
+  border: 1px solid #2a2f3a;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.panel-title {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border-radius: 10px;
+}
+.bar-label {
+  font-size: 12px;
+  fill: #c9d1d9;
+}
+.bar-value {
+  font-size: 12px;
+  fill: #8ab4f8;
+}
+.bar-rect {
+  fill: #4c8bf5;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid #2a2f3a;
+  border-radius: 10px;
+}
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: #111217;
+  color: #9aa0a6;
+  text-align: left;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 1px solid #2a2f3a;
+}
+.data-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #222531;
+  vertical-align: top;
+}
+.data-table tbody tr:hover td {
+  background: rgba(138, 180, 248, 0.06);
+}
